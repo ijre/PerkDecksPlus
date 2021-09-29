@@ -1,6 +1,9 @@
 local text_original = LocalizationManager.text
 local testAllStrings = false
 function LocalizationManager:text(string_id, ...)
+  if not YakuzaP:GetEnabled() then
+    return text_original(self, string_id, ...)
+  end
 
 return  string_id == "menu_deck12_1" and "Brawl Mastery"
 or string_id == "menu_deck12_1_desc" and "##Your mastery of the brawling technique allows you to deal more damage with fists or empty palm katas.##\n\nYour second and each consecutive melee hit within ##1## second of the last one will deal ##10## times its normal damage.\n\nWhen your health is below ##25%##, you will gain up to ##20%## armor recovery rate.\n##Entering this state negates regeneration effects.## \nBonuses scale linearly with health.\n\nYour chance to dodge is increased by ##15%##."

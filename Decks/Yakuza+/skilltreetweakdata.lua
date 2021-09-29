@@ -4,6 +4,9 @@ function SkillTreeTweakData:init()
 
 	originit(self) 
 
+  if not YakuzaP:GetEnabled() then
+    return end
+
 	table.insert(self.specializations[12][1].upgrades, "player_passive_dodge_chance_1")
 	table.insert(self.specializations[12][1].upgrades, "player_damage_dampener_outnumbered_strong")
 	table.insert(self.specializations[12][1].upgrades, "melee_stacking_hit_damage_multiplier_1")

@@ -1,16 +1,20 @@
 <?xml version="1.0"?>
 <mod>
-  <hooks script_path="Decks/" hook_id="lib/">
-    <group :script_path="Yakuza+/">
-      <post :hook_id="setups/gamesetup" :script_path="main.lua"/>
+  <hooks>
+    <post hook_id="core/lib/system/coresystem" script_path="main.lua"/>
 
-      <post :hook_id="managers/localizationmanager" :script_path="localizationmanager.lua"/>
-      <post :hook_id="managers/playermanager"       :script_path="playermanager.lua"/>
+    <group hook_id="lib/" script_path="Decks/">
+      <group :script_path="Yakuza+/">
+        <post hook_id="core/lib/system/coresystem" :script_path="main.lua"/>
 
-      <post :hook_id="units/beings/player/playerdamage" :script_path="playerdamage.lua"/>
-      <post :hook_id="units/enemies/cop/copdamage"      :script_path="copdamage.lua"/>
+        <post :hook_id="managers/localizationmanager" :script_path="localizationmanager.lua"/>
+        <post :hook_id="managers/playermanager"       :script_path="playermanager.lua"/>
 
-      <post :hook_id="tweak_data/skilltreetweakdata" :script_path="skilltreetweakdata.lua"/>
+        <post :hook_id="units/beings/player/playerdamage" :script_path="playerdamage.lua"/>
+        <post :hook_id="units/enemies/cop/copdamage"      :script_path="copdamage.lua"/>
+
+        <post :hook_id="tweak_data/skilltreetweakdata" :script_path="skilltreetweakdata.lua"/>
+      </group>
     </group>
   </hooks>
 </mod>

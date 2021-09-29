@@ -1,0 +1,18 @@
+{
+  "menu_id":        "PDP_Menu",
+  "parent_menu_id": "blt_options",
+  "title":          "PDP_Title",
+  "description":    "PDP_Desc",
+  "items":
+  [
+    {
+      "type":         "toggle",
+      "id":           "PDP_Yakuza",
+      "title":        "PDP_Yakuza_Title",
+      "description":  "PDP_Yakuza_Desc",
+      "callback":     "PDP_OnYakuza",
+      "value":        "PDP_Yakuza",
+      "default_value": "1"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 local function LoseHealthGetDodge()
-    if not Utils:IsInHeist() or not managers.player:has_category_upgrade("player", "movement_speed_damage_health_ratio_threshold_multiplier") then
+    if not YakuzaP:GetEnabled() or not Utils:IsInHeist() or not managers.player:has_category_upgrade("player", "movement_speed_damage_health_ratio_threshold_multiplier") then
         return 0
     end
     local player = managers.player:local_player()
@@ -20,6 +20,10 @@ end
 
 local orgcheck = PlayerManager.skill_dodge_chance
 function PlayerManager:skill_dodge_chance(running, crouching, on_zipline, override_armor, detection_risk)
+    if not YakuzaP:GetEnabled() then
+      orgcheck(self, running, crouching, on_zipline, override_armor, detection_risk)
+    end
+
     local player = managers.player and managers.player:local_player()
     local LostHealthDodge = LoseHealthGetDodge()
     if not crouching then 
