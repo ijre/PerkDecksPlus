@@ -40,6 +40,16 @@ Hooks:Add("MenuManagerInitialize", "PDP_OnMenuInit", function(MM)
     DecksP:Save()
   end
 
+  MenuCallbackHandler.PDP_OnBiker = function(self, option)
+    DecksP.Settings.BikerP = option:value() == "on"
+    DecksP:Save()
+  end
+
+  MenuCallbackHandler.PDP_OnKingpin = function(self, option)
+    DecksP.Settings.KingpinP = option:value() == "on"
+    DecksP:Save()
+  end
+
   DecksP:Load()
   MenuHelper:LoadFromJsonFile(settingsPath .. "menu.txt", DecksP, DecksP.Settings)
 end)

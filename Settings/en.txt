@@ -2,5 +2,9 @@
   "PDP_Title": "Perk Decks+",
   "PDP_Desc": "Vanilla Perk Decks but now they hit p",
   "PDP_Yakuza_Title": "Enable Yakuza+",
-  "PDP_Yakuza_Desc":  "Override the default Yakuza Perk Deck with its improved version."
+  "PDP_Yakuza_Desc":  "Override the default Yakuza Perk Deck with its improved version.",
+  "PDP_Biker_Title": "Enable Biker+",
+  "PDP_Biker_Desc":  "Override the default Biker Perk Deck with its improved version.",
+  "PDP_Kingpin_Title": "Enable Kingpin+",
+  "PDP_Kingpin_Desc":  "Override the default Kingpin Perk Deck with its improved version."
 }

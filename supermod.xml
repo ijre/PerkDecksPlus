@@ -1,12 +1,14 @@
 <?xml version="1.0"?>
 <mod>
   <hooks>
-    <post hook_id="core/lib/system/coresystem" script_path="main.lua"/>
+    <group hook_id="core/lib/system/" script_path="Decks/">
+      <post :hook_id="coresystem" :script_path="Yakuza+/main.lua"/>
+      <post :hook_id="coresystem" :script_path="Biker+/main.lua"/>
+      <post :hook_id="coresystem" :script_path="Kingpin+/main.lua"/>
+    </group>
 
     <group hook_id="lib/" script_path="Decks/">
       <group :script_path="Yakuza+/">
-        <post hook_id="core/lib/system/coresystem" :script_path="main.lua"/>
-
         <post :hook_id="managers/localizationmanager" :script_path="localizationmanager.lua"/>
         <post :hook_id="managers/playermanager"       :script_path="playermanager.lua"/>
 
@@ -14,6 +16,24 @@
         <post :hook_id="units/enemies/cop/copdamage"      :script_path="copdamage.lua"/>
 
         <post :hook_id="tweak_data/skilltreetweakdata" :script_path="skilltreetweakdata.lua"/>
+      </group>
+
+      <group :script_path="Biker+/">
+        <post :hook_id="managers/playermanager"       :script_path="PlayerManager.lua"/>
+        <post :hook_id="managers/localizationmanager" :script_path="LocalizationManager.lua"/>
+
+        <post :hook_id="units/beings/player/playermovement" :script_path="PlayerMovement.lua"/>
+
+        <post :hook_id="tweak_data/skilltreetweakdata" :script_path="SkillTreeTweak.lua"/>
+        <post :hook_id="tweak_data/upgradestweakdata"  :script_path="UpgradesTweak.lua"/>
+      </group>
+
+      <group :script_path="Kingpin+/">
+        <post :hook_id="managers/playermanager" :script_path="PlayerManager.lua"/>
+
+        <post :hook_id="units/beings/player/playerdamage"          :script_path="PlayerDamage.lua"/>
+        <post :hook_id="units/beings/player/states/playerstandard" :script_path="PlayerStandard.lua"/>
+        <post :hook_id="units/weapons/newraycastweaponbase"        :script_path="NRCWepBase.lua"/>
       </group>
     </group>
   </hooks>
