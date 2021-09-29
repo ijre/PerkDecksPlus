@@ -1,0 +1,5 @@
+{
+  "name": "Perk Decks+",
+  "description": "Mod which aims to make every Perk Deck viable for Death Sentence, without making it broken for Death Wish.",
+  "author": "PD+ by ijre \nYakuza+ by Lyra Keaton and ijre"
+}
