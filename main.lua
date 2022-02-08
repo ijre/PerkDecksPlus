@@ -3,7 +3,8 @@ DecksP.Settings =
 {
   YakuzaP = true,
   BikerP = true,
-  KingpinP = true
+  KingpinP = true,
+  CrewChiefP = true
 }
 
 local settingsPath = ModPath .. "Settings/"
@@ -47,6 +48,11 @@ Hooks:Add("MenuManagerInitialize", "PDP_OnMenuInit", function(MM)
 
   MenuCallbackHandler.PDP_OnKingpin = function(self, option)
     DecksP.Settings.KingpinP = option:value() == "on"
+    DecksP:Save()
+  end
+
+  MenuCallbackHandler.PDP_OnCrewChief = function(self, option)
+    DecksP.Settings.CrewChiefP = option:value() == "on"
     DecksP:Save()
   end
 

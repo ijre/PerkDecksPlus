@@ -6,6 +6,7 @@
       <post :hook_id="coresystem" :script_path="Yakuza+/main.lua"/>
       <post :hook_id="coresystem" :script_path="Biker+/main.lua"/>
       <post :hook_id="coresystem" :script_path="Kingpin+/main.lua"/>
+      <post :hook_id="coresystem" :script_path="Crew Chief+/main.lua"/>
     </group>
 
     <group hook_id="lib/" script_path="Decks/">
@@ -35,6 +36,13 @@
         <post :hook_id="units/beings/player/playerdamage"          :script_path="PlayerDamage.lua"/>
         <post :hook_id="units/beings/player/states/playerstandard" :script_path="PlayerStandard.lua"/>
         <post :hook_id="units/weapons/newraycastweaponbase"        :script_path="NRCWepBase.lua"/>
+      </group>
+
+      <group :script_path="Crew Chief+/">
+        <post :hook_id="units/beings/player/playermovement" :script_path="PlayerMovement.lua"/>
+
+        <post :hook_id="tweak_data/skilltreetweakdata" :script_path="SkillTreeTweak.lua"/>
+        <post :hook_id="tweak_data/upgradestweakdata"  :script_path="UpgradesTweak.lua"/>
       </group>
     </group>
   </hooks>

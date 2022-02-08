@@ -31,6 +31,15 @@
       "callback":     "PDP_OnKingpin",
       "value":        "KingpinP",
       "default_value": "1"
+    },
+    {
+      "type":         "toggle",
+      "id":           "PDP_CrewChief",
+      "title":        "PDP_CrewChief_Title",
+      "description":  "PDP_CrewChief_Desc",
+      "callback":     "PDP_OnCrewChief",
+      "value":        "CrewChiefP",
+      "default_value": "1"
     }
   ]
 }

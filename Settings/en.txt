@@ -6,5 +6,7 @@
   "PDP_Biker_Title": "Enable Biker+",
   "PDP_Biker_Desc":  "Override the default Biker Perk Deck with its improved version.",
   "PDP_Kingpin_Title": "Enable Kingpin+",
-  "PDP_Kingpin_Desc":  "Override the default Kingpin Perk Deck with its improved version."
+  "PDP_Kingpin_Desc":  "Override the default Kingpin Perk Deck with its improved version.",
+  "PDP_CrewChief_Title": "Enable Crew Chief+",
+  "PDP_CrewChief_Desc":  "Override the default Crew Chief Perk Deck with its improved version."
 }
