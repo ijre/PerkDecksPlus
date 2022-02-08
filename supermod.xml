@@ -2,6 +2,7 @@
 <mod>
   <hooks>
     <group hook_id="core/lib/system/" script_path="Decks/">
+      <post :hook_id="coresystem" :script_path="../main.lua"/>
       <post :hook_id="coresystem" :script_path="Yakuza+/main.lua"/>
       <post :hook_id="coresystem" :script_path="Biker+/main.lua"/>
       <post :hook_id="coresystem" :script_path="Kingpin+/main.lua"/>
