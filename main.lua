@@ -53,3 +53,5 @@ Hooks:Add("MenuManagerInitialize", "PDP_OnMenuInit", function(MM)
   DecksP:Load()
   MenuHelper:LoadFromJsonFile(settingsPath .. "menu.txt", DecksP, DecksP.Settings)
 end)
+
+DecksP:Load()
