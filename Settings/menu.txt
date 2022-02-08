@@ -11,7 +11,7 @@
       "title":        "PDP_Yakuza_Title",
       "description":  "PDP_Yakuza_Desc",
       "callback":     "PDP_OnYakuza",
-      "value":        "PDP_Yakuza",
+      "value":        "YakuzaP",
       "default_value": "1"
     },
     {
@@ -20,7 +20,7 @@
       "title":        "PDP_Biker_Title",
       "description":  "PDP_Biker_Desc",
       "callback":     "PDP_OnBiker",
-      "value":        "PDP_Biker",
+      "value":        "BikerP",
       "default_value": "1"
     },
     {
@@ -29,7 +29,7 @@
       "title":        "PDP_Kingpin_Title",
       "description":  "PDP_Kingpin_Desc",
       "callback":     "PDP_OnKingpin",
-      "value":        "PDP_Kingpin",
+      "value":        "KingpinP",
       "default_value": "1"
     }
   ]

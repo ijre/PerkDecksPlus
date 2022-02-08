@@ -7,7 +7,7 @@ DecksP.Settings =
 }
 
 local settingsPath = ModPath .. "Settings/"
-local savePath = SavePath .. "PDP.txt"
+local savePath = SavePath .. "Perk Decks+.txt"
 
 Hooks:Add("LocalizationManagerPostInit", "PDP_OnLocalizeInit", function(LM)
   LM:load_localization_file(settingsPath .. "en.txt")
