@@ -13,9 +13,11 @@
       <post :hook_id="managers/playermanager"       :script_path="playermanager.lua"/>
 
       <post :hook_id="units/beings/player/playerdamage" :script_path="playerdamage.lua"/>
+      <post :hook_id="units/beings/player/states/playerstandard" :script_path="playerstandard.lua"/>
       <post :hook_id="units/enemies/cop/copdamage"      :script_path="copdamage.lua"/>
 
       <post :hook_id="tweak_data/skilltreetweakdata" :script_path="skilltreetweakdata.lua"/>
+      <post :hook_id="tweak_data/blackmarket/meleeweaponstweakdata" :script_path="meleeweaponstweakdata.lua"/>
     </group>
 
     <group :script_path="Biker+/">
