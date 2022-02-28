@@ -21,7 +21,7 @@
     </group>
 
     <group :script_path="Biker+/">
-      <post :hook_id="managers/playermanager"       :script_path="PlayerManager.lua"/>
+      <post :hook_id="units/beings/player/playerdamage" :script_path="PlayerDamage.lua"/>
       <post :hook_id="managers/localizationmanager" :script_path="LocalizationManager.lua"/>
 
       <post :hook_id="units/beings/player/playermovement" :script_path="PlayerMovement.lua"/>
