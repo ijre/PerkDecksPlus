@@ -1,0 +1,15 @@
+{
+  "name": "Perk Decks+",
+  "description": "Mod which aims to make every Perk Deck viable for Death Sentence, without making it broken for Death Wish.",
+  "author": "\nRebalancing ideas by Lyra Keaton, programming by ijre",
+  "updates":
+  [
+    {
+      "identifier": "PDP",
+      "host":
+      {
+        "meta": "https://github.com/ijre/PerkDecksPlus/releases/latest/download/meta.json"
+      }
+    }
+  ]
+}

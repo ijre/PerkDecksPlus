@@ -1,0 +1,45 @@
+{
+  "menu_id":        "PDP_Menu",
+  "parent_menu_id": "blt_options",
+  "title":          "PDP_Title",
+  "description":    "PDP_Desc",
+  "items":
+  [
+    {
+      "type":         "toggle",
+      "id":           "PDP_Yakuza",
+      "title":        "PDP_Yakuza_Title",
+      "description":  "PDP_Yakuza_Desc",
+      "callback":     "PDP_OnYakuza",
+      "value":        "YakuzaP",
+      "default_value": "1"
+    },
+    {
+      "type":         "toggle",
+      "id":           "PDP_Biker",
+      "title":        "PDP_Biker_Title",
+      "description":  "PDP_Biker_Desc",
+      "callback":     "PDP_OnBiker",
+      "value":        "BikerP",
+      "default_value": "1"
+    },
+    {
+      "type":         "toggle",
+      "id":           "PDP_Kingpin",
+      "title":        "PDP_Kingpin_Title",
+      "description":  "PDP_Kingpin_Desc",
+      "callback":     "PDP_OnKingpin",
+      "value":        "KingpinP",
+      "default_value": "1"
+    },
+    {
+      "type":         "toggle",
+      "id":           "PDP_CrewChief",
+      "title":        "PDP_CrewChief_Title",
+      "description":  "PDP_CrewChief_Desc",
+      "callback":     "PDP_OnCrewChief",
+      "value":        "CrewChiefP",
+      "default_value": "1"
+    }
+  ]
+}
