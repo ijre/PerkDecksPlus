@@ -4,10 +4,10 @@ DecksP.Settings =
   YakuzaP = true,
   BikerP = true,
   KingpinP = true,
-  CrewChiefP = true
+  CrewChiefP = true,
+  TagTeamP = true
 }
 
-local savePath = SavePath .. "Perk Decks+.txt"
 local settingsPath = ModPath .. "Settings/"
 
 local hooks = io.open(ModPath .. "PDP/hooks.xml", "r")
@@ -15,6 +15,8 @@ if hooks ~= nil then
   settingsPath = ModPath .. "PDP/Settings/"
   hooks:close()
 end
+
+local savePath = SavePath .. "Perk Decks+.txt"
 
 Hooks:Add("LocalizationManagerPostInit", "PDP_OnLocalizeInit", function(LM)
   LM:load_localization_file(settingsPath .. "en.txt")
@@ -59,6 +61,11 @@ Hooks:Add("MenuManagerInitialize", "PDP_OnMenuInit", function(MM)
 
   MenuCallbackHandler.PDP_OnCrewChief = function(self, option)
     DecksP.Settings.CrewChiefP = option:value() == "on"
+    DecksP:Save()
+  end
+
+  MenuCallbackHandler.PDP_OnTagTeam = function(self, option)
+    DecksP.Settings.TagTeamP = option:value() == "on"
     DecksP:Save()
   end
 

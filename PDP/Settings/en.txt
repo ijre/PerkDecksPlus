@@ -8,5 +8,7 @@
   "PDP_Kingpin_Title": "Enable Kingpin+",
   "PDP_Kingpin_Desc":  "Override the default Kingpin Perk Deck with its improved version.",
   "PDP_CrewChief_Title": "Enable Crew Chief+",
-  "PDP_CrewChief_Desc":  "Override the default Crew Chief Perk Deck with its improved version."
+  "PDP_CrewChief_Desc":  "Override the default Crew Chief Perk Deck with its improved version.",
+  "PDP_TagTeam_Title": "Enable Tag Team+",
+  "PDP_TagTeam_Desc":  "Override the default Tag Team Perk Deck with its improved version."
 }

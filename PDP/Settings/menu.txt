@@ -40,6 +40,15 @@
       "callback":     "PDP_OnCrewChief",
       "value":        "CrewChiefP",
       "default_value": "1"
+    },
+    {
+      "type":         "toggle",
+      "id":           "PDP_TagTeam",
+      "title":        "PDP_TagTeam_Title",
+      "description":  "PDP_TagTeam_Desc",
+      "callback":     "PDP_OnTagTeam",
+      "value":        "TagTeamP",
+      "default_value": "1"
     }
   ]
 }

@@ -5,6 +5,7 @@
     <post :hook_id="coresystem" :script_path="Biker+/main.lua"/>
     <post :hook_id="coresystem" :script_path="Kingpin+/main.lua"/>
     <post :hook_id="coresystem" :script_path="Crew Chief+/main.lua"/>
+    <post :hook_id="coresystem" :script_path="Tag Team+/main.lua"/>
   </group>
 
   <group hook_id="lib/" :script_path="Decks/">
@@ -13,15 +14,14 @@
       <post :hook_id="managers/playermanager"       :script_path="playermanager.lua"/>
 
       <post :hook_id="units/beings/player/playerdamage" :script_path="playerdamage.lua"/>
-      <post :hook_id="units/beings/player/states/playerstandard" :script_path="playerstandard.lua"/>
       <post :hook_id="units/enemies/cop/copdamage"      :script_path="copdamage.lua"/>
 
       <post :hook_id="tweak_data/skilltreetweakdata" :script_path="skilltreetweakdata.lua"/>
-      <post :hook_id="tweak_data/blackmarket/meleeweaponstweakdata" :script_path="meleeweaponstweakdata.lua"/>
+      <post :hook_id="tweak_data/meleeweapontweakdata" :script_path="meleeweapontweakdata.lua"/>
     </group>
 
     <group :script_path="Biker+/">
-      <post :hook_id="units/beings/player/playerdamage" :script_path="PlayerDamage.lua"/>
+      <post :hook_id="managers/playermanager"       :script_path="PlayerManager.lua"/>
       <post :hook_id="managers/localizationmanager" :script_path="LocalizationManager.lua"/>
 
       <post :hook_id="units/beings/player/playermovement" :script_path="PlayerMovement.lua"/>
@@ -43,6 +43,18 @@
 
       <post :hook_id="tweak_data/skilltreetweakdata" :script_path="SkillTreeTweak.lua"/>
       <post :hook_id="tweak_data/upgradestweakdata"  :script_path="UpgradesTweak.lua"/>
+    </group>
+
+    <group :script_path="Tag Team+/">
+      <post :hook_id="managers/localizationmanager" :script_path="localizationmanager.lua"/>
+      <post :hook_id="managers/playermanager" :script_path="playermanager.lua"/>
+      
+      <post :hook_id="network/base/basenetworksession" :script_path="basenetworksession.lua"/>
+      <post :hook_id="player_actions/skills/playeractiontagteam" :script_path="tagteam.lua"/>
+      <post :hook_id="units/beings/player/states/playerstandard" :script_path="playerstandard.lua"/>
+          
+      <post :hook_id="tweak_data/upgradestweakdata"       :script_path="upgradestweak.lua"/>
+      <post :hook_id="tweak_data/skilltreetweakdata" :script_path="skilltreetweakdata.lua"/>
     </group>
   </group>
 </group>

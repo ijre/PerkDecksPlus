@@ -14,10 +14,16 @@ function SkillTreeTweakData:init()
 	table.insert(self.specializations[12][1].upgrades, "player_tier_armor_multiplier_1")
 	table.insert(self.specializations[12][1].upgrades, "player_tier_armor_multiplier_2")
 
+
 	table.insert(self.specializations[12][3].upgrades, "player_stamina_regen_timer_multiplier")
 	table.insert(self.specializations[12][3].upgrades, "player_stamina_regen_multiplier")
 	table.insert(self.specializations[12][3].upgrades, "player_movement_speed_multiplier")
 	table.insert(self.specializations[12][3].upgrades, "player_climb_speed_multiplier_1")
+	table.insert(self.specializations[12][3].upgrades, "player_melee_kill_life_leech")
+	table.insert(self.specializations[12][3].upgrades, "player_damage_dampener_close_contact_1")
+	table.insert(self.specializations[12][3].upgrades, "player_temp_swap_weapon_faster_1")
+	table.insert(self.specializations[12][3].upgrades, "player_temp_reload_weapon_faster_1")
+	table.insert(self.specializations[12][3].upgrades, "player_temp_increased_movement_speed_1")
 
 	table.insert(self.specializations[12][5].upgrades, "player_passive_dodge_chance_2")
 
@@ -25,6 +31,7 @@ function SkillTreeTweakData:init()
 
 	table.insert(self.specializations[12][9].upgrades, "weapon_passive_armor_piercing_chance")
 	table.insert(self.specializations[12][9].upgrades, "weapon_passive_swap_speed_multiplier_1")
+	table.insert(self.specializations[12][9].upgrades, "player_killshot_close_panic_chance")
 
 
 

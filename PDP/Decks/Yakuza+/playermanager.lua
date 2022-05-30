@@ -58,3 +58,11 @@ function PlayerManager:stamina_multiplier()
     return multi
 
 end
+
+Hooks:PostHook(PlayerManager, "on_killshot", "StaminaOnKill", function(self, killed_unit, variant)
+    local wep=managers.blackmarket:equipped_melee_weapon()
+    if variant == "melee" and wep == "fists" or wep == "fight" then
+	managers.player:player_unit():movement():add_stamina(managers.player:player_unit():movement():_max_stamina())
+	
+	end
+end)
